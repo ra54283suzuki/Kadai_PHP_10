@@ -1,0 +1,28 @@
+1. Viewは何をするところでしょうか。簡潔に説明してみてください。
+   ⇨Controllerの指示によってアクセスしてきたユーザーのブラウザに
+    表示するデータを生成する
+
+2. プログラマーがhtmlを書かずにPHPなどのプログラミング言語や
+   フレームワークを使う必要があるのはどういった理由でしょうか。
+   ⇨HTMLで記述すると決まったHTMLファイルしか表示できなく
+    ユーザーごとに表示する内容を出力できるようにするため
+
+3. 【応用】 前々章でAdmin/ProfileControllerのadd Action, edit Action に次のように記述しました。
+
+    public function add()
+    {
+        return view('admin.profile.create');
+    }
+    public function edit()
+    {
+        return view('admin.profile.edit');
+    }
+    
+    この場合、add Action と edit Action を描画するには、それぞれどこのディレクトリに何というbladeファイルを設置すれば良いでしょうか。
+    ⇨add Action:admin/profile/create.blade.php
+     edit Action:admin/profile/edit.blade.php
+
+4. 【応用】 3. の答えを実際に作成してみましょう。また、作成したbladeファイルにhtmlで記述して装飾してみましょう。
+    ⇨Kadai_PHP_10-4.phpに記載
+     実際にhtmlで記載し、記載したbladeファイルにアクセスしましたが、下記のような結果になりアクセスできませんでした。
+     https://gyazo.com/29b219b7b08cc471dc3371b9ae6f5582
